@@ -28,6 +28,7 @@
 		64B5F78619E5AAF3002865B9 /* Scores */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Scores; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B5F78919E5AAF3002865B9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		64B5F78B19E5AAF3002865B9 /* Scores.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Scores.1; sourceTree = "<group>"; };
+		64B5F79219E5ABA9002865B9 /* numbers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = numbers.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 			children = (
 				64B5F78919E5AAF3002865B9 /* main.cpp */,
 				64B5F78B19E5AAF3002865B9 /* Scores.1 */,
+				64B5F79219E5ABA9002865B9 /* numbers.txt */,
 			);
 			path = Scores;
 			sourceTree = "<group>";
