@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <fstream>
-#include <string>
 using namespace std;
 
 
@@ -20,8 +19,11 @@ statsT CalculateStats (string filename) {
     stats.low = 101;
     string number;
     int total = 0;
-    double numOfLines = 0;
+    int numOfLines = 0;
     ifstream file (filename);
+    if (!file.is_open()) {
+        cout << "failed to open file";
+    }
     if (file.is_open()) {
         while (getline(file, number)) {
             total += stoi (number);
@@ -34,11 +36,8 @@ statsT CalculateStats (string filename) {
             }
         }
         file.close();
-    } else {
-        cout << "failed to open file";
-        exit (EXIT_FAILURE);
     }
-    stats.avrg = total/numOfLines;
+    stats.avrg = total/double(numOfLines);
     return stats;
 }
 
